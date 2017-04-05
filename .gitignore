@@ -1,0 +1,5 @@
+dnsmasq.conf
+hostapd.conf
+ss-redir.conf
+dnsmasq.pid
+ss-redir.pid
