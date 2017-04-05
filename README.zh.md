@@ -9,7 +9,7 @@
 ## 用法
 
 ```bash
-git clone github.com/7sDream/jellyap
+git clone https://github.com/7sDream/jellyap.git
 cd jellyap
 chmox +x jellyap.sh
 ./jellyap.sh
