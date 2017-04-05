@@ -153,9 +153,9 @@ function command_test() {
 }
 
 function input_string() {
-    # Get a integer from user with [$1: prompt string],
-    # make sure the integer greate(or equal) then [$2: min value] 
-    # and less then [$3: max value].
+    # Get a string from user with [$1: prompt string],
+    # make sure the length of string greate(or equal) then [$2: min length]
+    # and less then [$3: max length].
 
     PROMPT="Please input a string:"
     MIN_LENGTH=0
@@ -176,7 +176,7 @@ function input_string() {
 
 function input_integer() {
     # Get a integer from user with [$1: prompt string],
-    # make sure the integer greate(or equal) then [$2: min value] 
+    # make sure the integer greate(or equal) then [$2: min value]
     # and less then [$3: max value].
 
     PROMPT="Please input a integer:"
@@ -202,6 +202,7 @@ function input_integer() {
 
 function iptables_chain_bypass_LAN() {
     # Add rule to iptables [$1: table] [$2: chain] to bypass LAN addresses.
+
     iptables -t $1 -A $2 -d 0.0.0.0/8 -j RETURN
     iptables -t $1 -A $2 -d 10.0.0.0/8 -j RETURN
     iptables -t $1 -A $2 -d 127.0.0.0/8 -j RETURN
