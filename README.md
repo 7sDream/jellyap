@@ -1,4 +1,4 @@
-# JellyAP - Create a WIFI AP with transparent proxy by one click
+# JellyAP - Create a WIFI AP with transparent proxy quickly
 
 [中文版](https://github.com/7sDream/jellyap/blob/master/README.zh.md)
 
