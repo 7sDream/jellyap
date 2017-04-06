@@ -225,7 +225,7 @@ function clean_envirment() {
     # Delete NAT Setting
     iptables -t nat -F
 
-    # Delete SS reply rules
+    # Delete SS relay rules
     if [ "$ENABLE_SS_RELAY" = "yes" ]; then
         iptables -t nat -X $IPTABLES_CHAIN_NAME1
         iptables -t mangle -F
@@ -365,7 +365,7 @@ if [ $NEED_CONFIRM -gt 0 ]; then
     echo -e "    - DNS: $DNS_1, $DNS_2"
 
     if [ "$ENABLE_SS_RELAY" = "yes" ]; then
-        echo -e "  - SS REPLY: ${GREEN}yes${NC}"
+        echo -e "  - SS RELAY: ${GREEN}yes${NC}"
         echo -e "    - SERVER: ${GREEN}$SS_SERVER_ADDR${NC}, ${GREEN}$SS_SERVER_PORT${NC}"
         echo -e "    - PASSWORD: ${RED}$SS_PASSWORD${NC}"
         echo -e "    - METHOD: ${GREEN}$SS_METHOD${NC}"
@@ -373,7 +373,7 @@ if [ $NEED_CONFIRM -gt 0 ]; then
         echo -e "    - TIMEOUT: $SS_TIMEOUT"
         echo -e "    - FAST OPEN: $SS_FAST_OPEN"
     else
-        echo -e "  - SS REPLY: ${RED}no${NC}"
+        echo -e "  - SS RELAY: ${RED}no${NC}"
     fi
 
     echo
