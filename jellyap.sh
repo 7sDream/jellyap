@@ -485,6 +485,6 @@ echo -e "\nWiFi Stop, Cleaning......\n"
 # hostapd stopped by Ctrl+C
 
 clean_envirment
-# ===== End of [Clean up environment] =====
+# ===== End of [Stop Services] =====
 
 echo -e "\nDone!\n"
