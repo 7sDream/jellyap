@@ -13,7 +13,7 @@ And it is almost transparent. XD
 ```bash
 git clone https://github.com/7sDream/jellyap.git
 cd jellyap
-chmox +x jellyap.sh
+chmod +x jellyap.sh
 ./jellyap.sh
 ```
 
